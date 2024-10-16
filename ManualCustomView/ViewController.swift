@@ -11,7 +11,10 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view.
+		
+		let manualView = ManualView(imageName: "scribble", text: "Manual View")
+		view.addSubview(manualView)
+		manualView.setConstraints()
 	}
 
 
